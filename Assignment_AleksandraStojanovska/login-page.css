@@ -1,0 +1,46 @@
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  background-color: #e0e0e0;
+}
+
+.login-page .form {
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #008b8b;
+
+  padding: 100px 55px;
+  border: 1px solid #008b8b;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.login-page label {
+  font-size: 16px;
+  margin-left: 2px;
+}
+
+.login-page input {
+  font-size: 15px;
+  margin: 6px 0;
+  padding: 6px 12px;
+}
+
+.login-page input[type="submit"] {
+  background-color: #008b8b;
+  color: #fff;
+  border-radius: 4px;
+}
