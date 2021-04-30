@@ -1,0 +1,490 @@
+html {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+body, html, div, nav, main, header, footer {
+    margin: 0;
+
+}
+
+#wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+li, h3, h2, h1, p, figcaption {
+    text-transform: uppercase;
+}
+
+header > input[type="button"] {
+    background-color: rgb(48, 47, 47);
+    color: white;
+    width: fit-content;
+    padding: 1rem 2rem;
+    border: 0;
+    cursor: pointer;
+    margin: 2rem;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+nav > h3 {
+    display: block;
+    align-self: center;
+    width: 20%;
+    font-weight: bolder;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    text-indent: 0;
+    box-sizing: border-box;
+}
+
+nav .menu-bars {
+    display: none;
+}
+
+nav li {
+    padding-right: 1.5em;
+    display: block;
+    align-self: center;
+    cursor: pointer;
+}
+
+nav li i {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    text-transform: none;
+}
+
+.home {
+    position: relative;
+}
+
+.portfolio {
+    position: relative;
+}
+
+.blog {
+    position: relative;
+}
+
+.shadow {
+    box-shadow: 0px 1px 5px 1px rgba(50, 50, 50, .3);
+}
+
+.shadow-2 {
+    box-shadow: 0px 3px 5px 2px rgba(50, 50, 50, .3);
+}
+
+.dropdown {
+    position: absolute;
+    left: -9999999999.5em;
+    background: white;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7em;
+}
+
+.dropdown-blog {
+    width: 3em;
+}
+
+.dropdown li {
+    text-indent: 0;
+    padding: .5em 0;
+    text-align: center;
+}
+
+.home:hover .dropdown-home {
+    left: 0em;
+}
+
+.portfolio:hover .dropdown-portfolio {
+    left: 0em;
+}
+
+.blog:hover .dropdown-blog {
+    left: 0em;
+}
+
+#boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 20vh;
+}
+
+#boxes > div {
+    text-align: center;
+    border-radius: 5px;
+    flex-basis: 20%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    display: block;
+    font-size: 2em;
+}
+
+#boxes > div:first-child {
+    background-color: rgb(255, 84, 68);
+    color: white;
+}
+
+#boxes > div:nth-child(2) {
+    background-color: rgb(170, 45, 182);
+    color: white;
+}
+
+#boxes > div:nth-child(3) {
+    background-color: rgb(30, 194, 164);
+    color: white;
+}
+
+#boxes > div:last-child {
+    background-color: rgb(39, 139, 224);
+    color: white;
+}
+
+main {
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+main input[type="button"] {
+    background-color: rgb(230, 225, 225);
+    cursor: pointer;
+    padding: .5em 1em;
+    border: 0;
+}
+
+main input[type="button"]:hover {
+    background-color: rgb(45, 45, 45);
+    color: white;
+}
+
+main h1 {
+    padding: 2em 2em 0em 2em;
+}
+
+main h1, h2, h3, #main-buttons {
+    text-align: center;
+}
+
+#options-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 0;
+}
+
+#options {
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    align-content: space-between;
+}
+
+#options img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#options > figure {
+    text-align: center;
+    flex-basis: 25%;
+    transition: transform .2s ease-out;
+    cursor: pointer;
+    box-sizing: border-box;
+   
+}
+
+figure:hover {
+    transform: scale(1.1);
+    border: 1px solid black;
+}
+
+figcaption, figure {
+    background-color: white;
+}
+
+figcaption {
+    padding: 1em 0;
+}
+
+#features {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+hr {
+    text-align: center;
+    width: 5%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#feature > p:first-child {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#feature > p:last-of-type {
+    text-transform: none;
+    text-align: center;
+}
+
+#feature > ul {
+    list-style-image: url(arrow.png);
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-around;
+    justify-content: flex-end;
+    height: 15vw;
+}
+
+#feature li {
+    height: 25%;
+    line-height: 8vh;
+}
+
+#social-div {
+    background-color: #464646;
+    color: white;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+#social-div > p {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+#social {
+    padding: 0.5em;
+    font-size: .7em;
+}
+
+#social a {
+    text-decoration: none;
+    color: white;
+}
+
+i {
+    margin: 0.3em;
+}
+
+footer {
+    background-color: #0a000a;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    text-transform: none;
+    text-align: center;
+    flex-basis: 30%;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    html {
+        font-size: 18px;
+    }
+
+    nav > h3 {
+        width: 30%;
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-basis: 100%;
+        align-self: flex-end;
+    }
+
+    header h2 {
+        font-size: 3rem;
+    }
+
+    header > input[type="button"] {
+        font-size: 1.2rem;
+    }
+
+    #showcase {
+        height: 40vw;
+    }
+
+    #showcase > div {
+        flex-basis: 20%;
+        height: 60%;
+    }
+
+    main input[type="button"] {
+        font-size: 1.1rem;
+    }
+
+    #options{
+        width: 90vw;
+        height: 120vh;
+        align-items: center;
+    }
+
+    #options > figure {
+        flex-basis: 40%;
+        margin: 0;
+    }
+
+    #feature ul {
+        height: 50vh;
+    }
+
+    #feature li {
+        height: 15%;
+    }
+
+    #social-div {
+        height: 17vh;
+    }
+
+    footer p {
+        font-size: .7rem;
+        flex-basis: 50%;
+    }
+
+    footer p:last-child {
+        flex-basis: 20%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    nav {
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav .menu-bars {
+        display: block;
+        align-self: center;
+        padding-right: .5em;
+    }
+
+    nav h3 {
+        width: 50%;
+    }
+
+    header h3 {
+        width: 80%;
+    }
+
+    #boxes {
+        height: 170vh;
+        align-content: center;
+    }
+
+    #boxes > div {
+        flex-basis: 60%;
+        height: 30vh;
+        margin: 1em 0;
+        font-size: 2em;
+        
+       }
+
+    span {
+        font-size: 4em;
+        font-weight: 200;
+    }
+
+    main input[type="button"] {
+        font-size: 1em;
+        padding: .4em .4em;
+    }
+
+    main h1 {
+        padding: 2em 0 0 0;
+    }
+
+    #options {
+        justify-content: center;
+        height: 250vh;
+    }
+
+    #options > figure {
+        flex-basis: 80%;
+    }
+
+    #feature ul {
+        height: 60vh;
+    }
+
+    #feature li {
+        width: 40%;
+        line-height: 3vh;
+    }
+
+    #social-div {
+        height: 20vh;
+    }
+
+    #social-div > p {
+        font-size: 3em;
+    }
+
+    #social {
+        font-size: .5em;
+        padding: 3em;
+    }
+
+    footer p {
+        font-size: .4em;
+    }
