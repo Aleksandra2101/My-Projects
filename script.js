@@ -57,6 +57,8 @@ document.querySelector('.check').addEventListener('click', function () {
     }
   }
 
+  
+});
 
 document.querySelector('.again').addEventListener('click', function () {
   score = 20;
